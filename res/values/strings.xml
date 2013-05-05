@@ -3,6 +3,11 @@
 
     <string name="app_name">WampSample</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="pubsub">PubSub</string>
+    <string name="rpc">RPC</string>
+    <string name="publish_message">Publish Message &#8230;</string>
+    <string name="call">Call</string>
+    <string name="check_your_logcat">Check your LogCat</string>
+    <string name="spinner_prompt">Select</string>
 
 </resources>

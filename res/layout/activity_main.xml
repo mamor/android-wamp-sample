@@ -9,8 +9,79 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/pubsub_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/pubsub" />
+
+    <Spinner
+        android:id="@+id/topic_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pubsub_text"
+        android:layout_below="@+id/pubsub_text"
+        android:entries="@array/topic_entries"
+        android:prompt="@string/spinner_prompt" />
+
+    <Spinner
+        android:id="@+id/pubsub_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/topic_spinner"
+        android:layout_below="@+id/topic_spinner"
+        android:entries="@array/pubsub_entries"
+        android:prompt="@string/spinner_prompt" />
+
+    <EditText
+        android:id="@+id/message_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pubsub_spinner"
+        android:layout_below="@+id/pubsub_spinner"
+        android:ems="10"
+        android:maxLength="20"
+        android:hint="@string/publish_message" />
+
+    <Button
+        android:id="@+id/pubsub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/message_field"
+        android:layout_below="@+id/message_field"
+        android:text="@string/pubsub" />
+
+    <Spinner
+        android:id="@+id/method_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rpc_text"
+        android:layout_below="@+id/rpc_text"
+        android:entries="@array/method_entries"
+        android:prompt="@string/spinner_prompt" />
+
+    <Button
+        android:id="@+id/rpc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/method_spinner"
+        android:layout_below="@+id/method_spinner"
+        android:text="@string/call" />
+
+    <TextView
+        android:id="@+id/rpc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pubsub_button"
+        android:layout_below="@+id/pubsub_button"
+        android:text="@string/rpc" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rpc_button"
+        android:layout_below="@+id/rpc_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/check_your_logcat" />
 
 </RelativeLayout>

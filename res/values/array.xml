@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="topic_entries">
+        <item>topic_1</item>
+        <item>topic_2</item>
+        <item>topic_3</item>
+        <item>invalid_topic</item>
+    </string-array>
+    <string-array name="pubsub_entries">
+        <item>publish</item>
+        <item>subscribe</item>
+        <item>unsubscribe</item>
+    </string-array>
+    <string-array name="method_entries">
+        <item>get_subscribing_topics</item>
+        <item>invalid_method</item>
+    </string-array>
+</resources>
