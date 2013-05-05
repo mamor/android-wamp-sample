@@ -206,4 +206,9 @@ public class MainActivity extends Activity {
         return true;
     }
 
+    @Override 
+    protected void onDestroy() { 
+        System.exit(0);
+    }
+
 }
