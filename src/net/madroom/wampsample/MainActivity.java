@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     /**
      * WAMPコネクション用
      */
-    private static String WAMP_URI = "ws://fuelratchet.madroom.org/socket_wamp_api";
+    private static final String WAMP_URI = "ws://fuelratchet.madroom.org/socket_wamp_api";
     private AutobahnConnection mConnection;
 
     /**
@@ -124,7 +124,7 @@ public class MainActivity extends Activity {
                         Log.d("APP", "Msg => " + message);
 
                         try {
-                            JSONObject json = new JSONObject("{\"msg\": \"" + message + "\"}");
+                            final JSONObject json = new JSONObject("{\"msg\": \"" + message + "\"}");
                             mConnection.publish(topic, json.toString());
                         } catch (JSONException e) {
                             // TODO Auto-generated catch block
